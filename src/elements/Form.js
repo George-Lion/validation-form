@@ -62,4 +62,36 @@ const IconValidation = styled(FontAwesomeIcon)`
   opacity: 20; 
 `;
 
-export { Formulario, Label, GroupInput, Input, LeyendError, IconValidation };
+const Terms = styled.div`
+  grid-column: span 2;
+input{
+    margin-right: 10px;
+  }
+`;
+
+const ContentButtonCenter = styled.div`
+  display:flex;
+  flex-direction: column;
+  align-item: center;
+  grid-column: span 2;
+`;
+
+const Button = styled.button`
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .1s ease all;
+
+  &:hover{
+    box-shadow: 3px 0px 30px rgba(163,163,163,1);
+  }
+
+`;
+
+export { Formulario, Label, GroupInput, Input, LeyendError, IconValidation, Terms, ContentButtonCenter, Button  };
